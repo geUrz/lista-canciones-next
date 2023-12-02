@@ -69,7 +69,7 @@ export function Song(props) {
           </div>
           {!user ? (
             <div /> ) : 
-          user.username === 'gurz' ? (
+          user.username === 'admin' ? (
             <div className={styles.containerActions} onClick={noUser}>
               <Image src="/img/trash.png" />
             </div>
