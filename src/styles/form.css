@@ -1,0 +1,25 @@
+.ui.form input, .ui.form textarea{
+  font-size: small !important;
+  /* text-transform: capitalize !important; */
+  color: azure !important;
+  background-color: var(--background1) !important;
+}
+
+.ui.form input:focus, .ui.form textarea:focus{
+  border-color: darkgray !important;
+}
+
+
+.fields{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ui.form button{
+  font-weight: 200;
+}
+
+/* .field.error input{
+  border-color: red !important;
+} */

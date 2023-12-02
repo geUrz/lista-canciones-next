@@ -1,0 +1,36 @@
+.add{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 50px;
+  right: 40px;
+  background-color: green;
+  box-shadow: 0px 0px 3px 2px green;
+  cursor: pointer;
+}
+
+/* .add:active{
+  background-color: green !important;
+} */
+
+.add:hover{
+  background-color: rgb(0, 150, 0);
+  box-shadow: 0px 0px 10px 3px green;
+}
+
+.add:active{
+  background-color: rgb(0, 180, 0);
+}
+
+.add img{
+  height: 21px;
+  cursor: pointer;
+}
+
+.addHide{
+  display: none;
+}

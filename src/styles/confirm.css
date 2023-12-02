@@ -1,0 +1,39 @@
+.content, .actions{
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background-color: var(--background3) !important;
+}
+
+.ui.button, .ui.button.primary{
+  color: azure !important;
+  font-weight: 200 !important;
+}
+
+.ui.button{
+  background-color: red !important;
+}
+
+.ui.button:hover{
+  color: azure !important;
+  background-color: rgb(255, 33, 33) !important;
+}
+
+.ui.button:active, .ui.button:focus{
+  color: azure !important;
+  background-color: red !important;
+}
+
+.ui.button.primary{
+  background-color: gray !important;
+}
+
+.ui.button.primary:hover{
+  color: azure !important;
+  background-color: rgb(112, 112, 112) !important;
+}
+
+.ui.button.primary:active, .ui.button.primary:focus{
+  color: azure !important;
+  background-color: gray !important;
+}

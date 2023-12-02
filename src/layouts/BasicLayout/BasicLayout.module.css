@@ -1,0 +1,11 @@
+.relative{
+  padding-top: 60px;
+} 
+
+@media screen and (min-width: 800px) {
+
+  .relative{
+    padding-top: 70px;
+  } 
+
+}

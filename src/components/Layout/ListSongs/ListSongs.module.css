@@ -1,0 +1,158 @@
+.mainListsong{
+  padding-bottom: 150px;
+  margin-top: 100px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+}
+
+.containerListsong > div{
+  margin: 8px 4px 0 4px;
+  padding: 10px;
+  width: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background3);
+}
+
+.row1, .row2, .row3{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row1 > div{
+  padding: 2px;
+  width: 50%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* position: relative; */
+}
+
+.row2 > div{
+  width: 50%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .row1 h2{
+  margin: 0;
+  font-size: 9.5px;
+  color: azure;
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
+
+.row1 h1, .row3 h1{
+  margin: 0;
+  font-size: 8px;
+  font-weight: 200;
+  color: cyan;
+}
+
+.row2 h1{
+  margin: 0;
+  font-size: 12px;
+}
+.row2 div:nth-child(2) h1{
+  margin: 0;
+  font-size: 10px;
+}
+
+.row3{
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mensajes{
+  width: 85%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mensajes p{
+  font-size: 8.5px;
+}
+
+.containerActions{
+  padding: 5px;
+  margin-top: 5px;
+  width: 15%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  cursor: pointer;
+}
+
+.containerActions img{
+  height: 14px;
+  cursor: pointer;
+}
+
+.containerActions:active{
+  background-color: red !important;
+}
+
+.containerActions:hover{
+  background-color: rgb(214, 0, 0);
+}
+
+.listEmpty{
+  margin-top: -70px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.listEmpty img{
+  height: 25px;
+}
+
+.listEmpty h1{
+  margin-top: 10px;
+  font-size: small;
+  font-weight: 200;
+  color: azure;
+}
+
+@media screen and (min-width: 800px) {
+
+  .mainListsong{
+    margin-top: 120px;
+  }
+
+  .listEmpty img{
+    height: 30px;
+  }
+  
+  .listEmpty h1{
+    margin-top: 15px;
+  }
+
+}

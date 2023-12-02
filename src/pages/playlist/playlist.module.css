@@ -1,0 +1,64 @@
+.boxSong{
+  padding: 20px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 0, 0, .85);
+  position: fixed;
+  z-index: 1000;
+}
+
+.boxSong a{
+  margin: 0 5px 0 5px;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center !important;
+  justify-content: center !important;
+  background-color: var(--background4);
+  cursor: pointer;
+}
+
+.boxSong a:hover{
+  opacity: .9;
+}
+
+.boxSong a:nth-child(2){
+  background-color: darkcyan;
+}
+
+.boxSong img{
+  margin-top: 8px;
+  height: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.boxSong h1{
+  margin-top: 2px;
+  font-size: 8px;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 800px) {
+  
+  .boxSong a{
+    margin: 0 10px 0 10px;
+    width: 70px;
+    height: 70px;
+  }
+
+  .boxSong img{
+    height: 30px;
+  }
+  
+  .boxSong h1{
+    margin-top: 5px;
+    font-size: 10px;
+  }
+
+}

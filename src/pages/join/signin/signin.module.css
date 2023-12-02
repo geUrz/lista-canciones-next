@@ -1,0 +1,30 @@
+.containerSignin{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxSignin{
+  padding: 25px;
+  width: 280px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background3);
+}
+
+.boxSignin img{
+  height: 100px;
+}
+
+.boxSignin h1{
+  margin-top: 12px;
+  font-size: small;
+  font-weight: 200;
+
+}

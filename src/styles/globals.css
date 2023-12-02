@@ -1,0 +1,30 @@
+@import './colors.css';
+@import './form.css';
+@import './confirm.css';
+
+@font-face {
+  font-family: 'Mulish';
+  src: url('../../public/fonts/Mulish/static/Mulish-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Bebas';
+  src: url('../../public/fonts/Bebas/BebasNeue-Regular.ttf');
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Mulish' !important;
+  color: azure;
+  cursor: default;
+}
+
+body{
+  background-color: var(--background1) !important;
+}
+
+h1,h2,h3,h4{
+  margin: 0;
+  padding: 0;
+}
