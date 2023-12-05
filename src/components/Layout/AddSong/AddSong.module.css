@@ -8,8 +8,8 @@
   position: fixed;
   bottom: 50px;
   right: 40px;
-  background-color: green;
-  box-shadow: 0px 0px 3px 2px green;
+  background-color: azure;
+  box-shadow: 0px 0px 3px 2px azure;
   cursor: pointer;
 }
 
@@ -18,12 +18,11 @@
 } */
 
 .add:hover{
-  background-color: rgb(0, 150, 0);
-  box-shadow: 0px 0px 10px 3px green;
+  box-shadow: 0px 0px 10px 0.1px azure;
 }
 
 .add:active{
-  background-color: rgb(0, 180, 0);
+  background-color: azure;
 }
 
 .add img{

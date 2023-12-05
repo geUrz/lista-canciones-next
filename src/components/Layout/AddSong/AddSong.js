@@ -14,7 +14,7 @@ export function AddSong(props) {
         <Loading loadingStyle={false}/>
       ) : (
         <div className={styles.add} onClick={noUser}>
-          <Image src='/img/add.png' />
+          <Image src='/img/add2.png' />
         </div>
       )}
     </>

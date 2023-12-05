@@ -29,11 +29,11 @@ export function ListSongs(props) {
   }, [reload])
 
 
-  if(!listsong) return null
+  //if(!listsong) return null
 
   return (
     <>
-      {!listsong ? (
+      {!listsong  ? (
         <Loading />
       ) :
       size(listsong) === 0 ? (

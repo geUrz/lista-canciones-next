@@ -23,7 +23,7 @@
 }
 
 .boxSong a:hover{
-  opacity: .9;
+  background-color: rgb(42, 42, 42);
 }
 
 .boxSong a:nth-child(2){
