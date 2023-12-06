@@ -38,7 +38,27 @@ export function BasicLayout(props) {
   const [add, setAdd] = useState(false)
 
   const addStatus = () => setAdd((prevState) => !prevState)
-
+ function initialFunction() {
+  const tiempoDeEspera = 1;
+    let time = localStorage.getItem("countdown")||0;
+    if (!time) return;
+    time =parseInt(time) / 1000/60;
+    let currentTime = Date.now()/1000/60
+    let minutos = currentTime - time;
+    if (minutos > tiempoDeEspera){
+      localStorage.removeItem("countdown");
+      return;
+    }
+    let segundos = 60* (tiempoDeEspera-minutos)
+    setAdd(true)
+      setTimeout(() => {
+        setAdd(false);
+      },parseInt(1000*segundos))
+  }
+  useEffect(() => {
+   
+  initialFunction();
+  }, [])
   return (
     <>
       <TopBar title={title} />

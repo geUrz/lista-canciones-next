@@ -1,8 +1,8 @@
 export const ENV = {
-  SERVER_HOST: 'http://localhost:1337',
-  API_URL: 'http://localhost:1337/api',
-  /* SERVER_HOST: 'https://lista-canciones-strapi.onrender.com',
-  API_URL: 'https://lista-canciones-strapi.onrender.com/api', */
+   /* SERVER_HOST: 'http://localhost:1337',
+  API_URL: 'http://localhost:1337/api',  */
+  SERVER_HOST: 'https://appealing-darling-fe0d7bdfb0.strapiapp.com',
+  API_URL: 'https://appealing-darling-fe0d7bdfb0.strapiapp.com/api', 
   ENDPOINTS: {
     AUTH: {
       REGISTER: 'auth/local/register',

@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Form, FormButton, FormGroup, FormInput, FormTextArea, } from "semantic-ui-react"
 import { useFormik } from "formik"
 import { initialValues, validationSchema } from "@/components/SongForm"
@@ -16,10 +16,16 @@ export function SongForm(props) {
   //const [timeout, setTimeout] = useState()
 
   const countDown = () => {
-    setTimeout(() => {
-      addStatus()
-    }, 1000*5)
+   
+  //guardar el tiempo actual en el localstorage. 
+  //restarlo el nuevo tiempo acutal con el guardado, comprobar si tiene mas de 10min.
+  localStorage.setItem("countdown",Date.now().toString());
+  const tiempoDeEspera = 1;
+  setTimeout(() => {
+  addStatus();
+  }, 1000*60*tiempoDeEspera)
   }
+ 
 
   const formik = useFormik({
     initialValues: initialValues(),
@@ -63,9 +69,6 @@ export function SongForm(props) {
         error={formik.errors.message}
       />
       <FormGroup>
-        <FormButton size="small" onClick={onClose}>
-          Cancelar
-        </FormButton>
         <FormButton
           type="submit"
           size="small"
@@ -73,6 +76,9 @@ export function SongForm(props) {
           loading={formik.isSubmitting}
         >
           Añadir
+        </FormButton>
+        <FormButton size="small" onClick={onClose}>
+          Cancelar
         </FormButton>
       </FormGroup>
     </Form>

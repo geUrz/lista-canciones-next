@@ -83,8 +83,8 @@ export function Song(props) {
 
     <Confirm 
       open={showConfirm}
-      onCancel={openCloseConfirm}
       onConfirm={onDelete}
+      onCancel={openCloseConfirm}
       content='¿ Estas seguro de eliminar la canción ?'
     />
   
