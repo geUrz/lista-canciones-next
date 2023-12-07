@@ -23,7 +23,161 @@ export default function Repertorio() {
       <div className={styles.mainRepesong}>
         <div className={styles.containerRepesong}>
           <div className={styles.boxTitle}>
-            <h1>Baladas</h1>
+            <h1>Baladas Español</h1>
+          </div>
+          <div className={styles.boxRepe}>
+            <h2>AUTUMS</h2>
+            <h2>BESAME MUCHO</h2>
+            <h2>STAND BY ME</h2>
+            <h2>BAILAR</h2>
+            <h2>Y AHORA TU</h2>
+            <h2>SWAY</h2>
+            <h2>VIVIR ASI ES MORIR DE AMOR</h2>
+            <h2>POLOS OPUESTOS</h2>
+            <h2>CANTA CORAZON</h2> 
+            <h2>TU SOLO TU</h2> 
+            <h2>EL TRISTE</h2>
+            <h2>WHEN A MAN LOVES</h2>
+            <h2>IT’S A MANS WORLD</h2>
+            <h2>IF AINT GOT YOU</h2>
+            <h2>GRAVITY</h2>
+          </div>
+        </div>
+        <div className={styles.containerRepesong}>
+          <div className={styles.boxTitle}>
+            <h1>Baladas Ingles</h1>
+          </div>
+          <div className={styles.boxRepe}>
+            <h2>AUTUMS</h2>
+            <h2>BESAME MUCHO</h2>
+            <h2>STAND BY ME</h2>
+            <h2>BAILAR</h2>
+            <h2>Y AHORA TU</h2>
+            <h2>SWAY</h2>
+            <h2>VIVIR ASI ES MORIR DE AMOR</h2>
+            <h2>POLOS OPUESTOS</h2>
+            <h2>CANTA CORAZON</h2> 
+            <h2>TU SOLO TU</h2> 
+            <h2>EL TRISTE</h2>
+            <h2>WHEN A MAN LOVES</h2>
+            <h2>IT’S A MANS WORLD</h2>
+            <h2>IF AINT GOT YOU</h2>
+            <h2>GRAVITY</h2>
+          </div>
+        </div>
+        <div className={styles.containerRepesong}>
+          <div className={styles.boxTitle}>
+            <h1>Pop Español</h1>
+          </div>
+          <div className={styles.boxRepe}>
+            <h2>AUTUMS</h2>
+            <h2>BESAME MUCHO</h2>
+            <h2>STAND BY ME</h2>
+            <h2>BAILAR</h2>
+            <h2>Y AHORA TU</h2>
+            <h2>SWAY</h2>
+            <h2>VIVIR ASI ES MORIR DE AMOR</h2>
+            <h2>POLOS OPUESTOS</h2>
+            <h2>CANTA CORAZON</h2> 
+            <h2>TU SOLO TU</h2> 
+            <h2>EL TRISTE</h2>
+            <h2>WHEN A MAN LOVES</h2>
+            <h2>IT’S A MANS WORLD</h2>
+            <h2>IF AINT GOT YOU</h2>
+            <h2>GRAVITY</h2>
+          </div>
+        </div>
+        <div className={styles.containerRepesong}>
+          <div className={styles.boxTitle}>
+            <h1>Pop Ingles</h1>
+          </div>
+          <div className={styles.boxRepe}>
+            <h2>AUTUMS</h2>
+            <h2>BESAME MUCHO</h2>
+            <h2>STAND BY ME</h2>
+            <h2>BAILAR</h2>
+            <h2>Y AHORA TU</h2>
+            <h2>SWAY</h2>
+            <h2>VIVIR ASI ES MORIR DE AMOR</h2>
+            <h2>POLOS OPUESTOS</h2>
+            <h2>CANTA CORAZON</h2> 
+            <h2>TU SOLO TU</h2> 
+            <h2>EL TRISTE</h2>
+            <h2>WHEN A MAN LOVES</h2>
+            <h2>IT’S A MANS WORLD</h2>
+            <h2>IF AINT GOT YOU</h2>
+            <h2>GRAVITY</h2>
+          </div>
+        </div>
+        <div className={styles.containerRepesong}>
+          <div className={styles.boxTitle}>
+            <h1>Rock Español</h1>
+          </div>
+          <div className={styles.boxRepe}>
+            <h2>AUTUMS</h2>
+            <h2>BESAME MUCHO</h2>
+            <h2>STAND BY ME</h2>
+            <h2>BAILAR</h2>
+            <h2>Y AHORA TU</h2>
+            <h2>SWAY</h2>
+            <h2>VIVIR ASI ES MORIR DE AMOR</h2>
+            <h2>POLOS OPUESTOS</h2>
+            <h2>CANTA CORAZON</h2> 
+            <h2>TU SOLO TU</h2> 
+            <h2>EL TRISTE</h2>
+            <h2>WHEN A MAN LOVES</h2>
+            <h2>IT’S A MANS WORLD</h2>
+            <h2>IF AINT GOT YOU</h2>
+            <h2>GRAVITY</h2>
+          </div>
+        </div>
+        <div className={styles.containerRepesong}>
+          <div className={styles.boxTitle}>
+            <h1>Rock Ingles</h1>
+          </div>
+          <div className={styles.boxRepe}>
+            <h2>AUTUMS</h2>
+            <h2>BESAME MUCHO</h2>
+            <h2>STAND BY ME</h2>
+            <h2>BAILAR</h2>
+            <h2>Y AHORA TU</h2>
+            <h2>SWAY</h2>
+            <h2>VIVIR ASI ES MORIR DE AMOR</h2>
+            <h2>POLOS OPUESTOS</h2>
+            <h2>CANTA CORAZON</h2> 
+            <h2>TU SOLO TU</h2> 
+            <h2>EL TRISTE</h2>
+            <h2>WHEN A MAN LOVES</h2>
+            <h2>IT’S A MANS WORLD</h2>
+            <h2>IF AINT GOT YOU</h2>
+            <h2>GRAVITY</h2>
+          </div>
+        </div>
+        <div className={styles.containerRepesong}>
+          <div className={styles.boxTitle}>
+            <h1>Disco</h1>
+          </div>
+          <div className={styles.boxRepe}>
+            <h2>AUTUMS</h2>
+            <h2>BESAME MUCHO</h2>
+            <h2>STAND BY ME</h2>
+            <h2>BAILAR</h2>
+            <h2>Y AHORA TU</h2>
+            <h2>SWAY</h2>
+            <h2>VIVIR ASI ES MORIR DE AMOR</h2>
+            <h2>POLOS OPUESTOS</h2>
+            <h2>CANTA CORAZON</h2> 
+            <h2>TU SOLO TU</h2> 
+            <h2>EL TRISTE</h2>
+            <h2>WHEN A MAN LOVES</h2>
+            <h2>IT’S A MANS WORLD</h2>
+            <h2>IF AINT GOT YOU</h2>
+            <h2>GRAVITY</h2>
+          </div>
+        </div>
+        <div className={styles.containerRepesong}>
+          <div className={styles.boxTitle}>
+            <h1>Rock N' Roll</h1>
           </div>
           <div className={styles.boxRepe}>
             <h2>AUTUMS</h2>

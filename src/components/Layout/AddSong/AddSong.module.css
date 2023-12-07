@@ -9,16 +9,11 @@
   bottom: 50px;
   right: 40px;
   background-color: azure;
-  box-shadow: 0px 0px 3px 2px azure;
   cursor: pointer;
 }
 
-/* .add:active{
-  background-color: green !important;
-} */
-
 .add:hover{
-  box-shadow: 0px 0px 10px 0.1px azure;
+  box-shadow: 0px 0px 5px 0.1px azure;
 }
 
 .add:active{
