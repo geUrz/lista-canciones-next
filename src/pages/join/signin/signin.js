@@ -1,7 +1,8 @@
 import { JoinLayout } from "@/layouts"
 import { Image } from "semantic-ui-react"
-import styles from './signin.module.css'
 import { LoginForm } from "@/components/Auth/LoginForm/LoginForm"
+import { FaUser } from 'react-icons/fa'
+import styles from './signin.module.css'
 
 export default function Signin() {
 
@@ -11,8 +12,10 @@ export default function Signin() {
       
       <div className={styles.containerSignin}>
         <div className={styles.boxSignin}>
-          <Image src='/img/user.png' />
-          <h1>Iniciar sesión</h1>
+          {/* <Image src='/img/user.png' /> */}
+          <FaUser />
+          
+          <div className={styles.h1}><h1>Iniciar sesión</h1></div>
           
           <LoginForm />
 

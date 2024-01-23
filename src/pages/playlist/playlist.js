@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { BasicLayout } from "@/layouts"
 import { Image } from "semantic-ui-react"
 import styles from './playlist.module.css'

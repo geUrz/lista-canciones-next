@@ -3,6 +3,7 @@ import { useRouter } from 'next/router'
 import { Image } from "semantic-ui-react"
 import { Delsong } from "@/api"
 import { useAuth } from "@/hooks"
+import { Toaster, toast } from "sonner"
 import { Confirm } from "../Confirm"
 import styles from "./ListSongs.module.css"
 
@@ -24,6 +25,7 @@ export function Song(props) {
     try {
       await delSongCtrl.delete(songId)
       onReload()
+      toast.warning(' ¡ canción eliminada correctamente ! ')
     } catch (error) {
       console.error(error);
     }
@@ -69,7 +71,7 @@ export function Song(props) {
           </div>
           {!user ? (
             <div /> ) : 
-          user.username === 'admin' ? (
+            user.username === 'admin' ? (
             <div className={styles.containerActions} onClick={noUser}>
               <Image src="/img/trash.png" />
             </div>
@@ -86,6 +88,14 @@ export function Song(props) {
       onConfirm={onDelete}
       onCancel={openCloseConfirm}
       content='¿ Estas seguro de eliminar la canción ?'
+    />
+
+    <Toaster 
+      theme="dark"
+      position="bottom-center"
+      duration={8000}
+      visibleToasts={1}
+      richColors
     />
   
   </>  

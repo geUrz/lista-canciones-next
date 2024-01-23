@@ -5,12 +5,17 @@ import { Listsong } from "@/api"
 import { Song } from "./Song"
 import { Loading } from "../Loading"
 import styles from "./ListSongs.module.css"
-
+import {io} from "socket.io-client"
 
 const listSongCtrl = new Listsong()
 
+const socket = io("http://localhost:1337", {path: "/"})
 export function ListSongs(props) {
 
+  useEffect(() => {
+    socket.on('mensaje', (data) => console.log(data))
+  }, [])
+console.log(socket)
   const { reload, onReload } = props
 
   const [listsong, setListsong] = useState(null)
@@ -20,6 +25,7 @@ export function ListSongs(props) {
       try {
         const response = await listSongCtrl.getAll()
         setListsong(response.data)
+
       } catch (error) {
         console.error(error)
       }

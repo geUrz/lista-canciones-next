@@ -2,7 +2,7 @@
   font-size: small !important;
   /* text-transform: capitalize !important; */
   color: azure !important;
-  background-color: var(--background1) !important;
+  background-color: var(--background3) !important;
 }
 
 .ui.form input:focus, .ui.form textarea:focus{

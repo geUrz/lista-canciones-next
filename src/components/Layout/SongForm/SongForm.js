@@ -1,11 +1,11 @@
-import { useEffect, useState } from "react"
 import { Form, FormButton, FormGroup, FormInput, FormTextArea, } from "semantic-ui-react"
 import { useFormik } from "formik"
 import { initialValues, validationSchema } from "@/components/SongForm"
 import { Addsong } from "@/api"
 import { useAuth } from "@/hooks"
+import { Toaster, toast } from "sonner"
 
-const addSongCtrl = new Addsong();
+const addSongCtrl = new Addsong()
 
 export function SongForm(props) {
 
@@ -13,10 +13,7 @@ export function SongForm(props) {
 
   const {user} = useAuth()
 
-  //const [timeout, setTimeout] = useState()
-
   const countDown = () => {
-   
   //guardar el tiempo actual en el localstorage. 
   //restarlo el nuevo tiempo acutal con el guardado, comprobar si tiene mas de 10min.
   localStorage.setItem("countdown",Date.now().toString());
@@ -39,11 +36,13 @@ export function SongForm(props) {
         addStatus()
         countDown()
         onReload()
+        toast.success(' ¡ Canción agregada correctamente ! ')
       } catch (error) {
+        toast.error(' ¡ Error al agregar canción ! ')
         console.error(error);
       }
     },
-  });
+  })
 
   return (
     <Form onSubmit={formik.handleSubmit}>
@@ -81,6 +80,13 @@ export function SongForm(props) {
           Cancelar
         </FormButton>
       </FormGroup>
+      <Toaster 
+        theme="dark"
+        position="bottom-center"
+        duration={8000}
+        visibleToasts={1}
+        richColors
+      />
     </Form>
-  );
+  )
 }

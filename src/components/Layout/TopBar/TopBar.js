@@ -8,11 +8,10 @@ export function TopBar(props) {
   const {user, logout} = useAuth()
   const router = useRouter()
 
-  const {title, onReload} = props
+  const {title} = props
 
   const logoutSignin = () => {
     router.push('join/signin')
-    //onReload()
     logout()
   }
 

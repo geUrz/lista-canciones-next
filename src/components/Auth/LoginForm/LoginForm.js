@@ -3,7 +3,8 @@ import { Form, FormButton, FormGroup, FormInput } from "semantic-ui-react";
 import { useFormik } from "formik"
 import { initialValues, validationSchema } from "./LoginForm.form"
 import { useAuth } from "@/hooks"
-import { Auth } from "@/api";
+import { Auth } from "@/api"
+import { Toaster, toast } from "sonner"
 
 const authCtrl = new Auth()
 
@@ -22,6 +23,8 @@ export function LoginForm() {
         login(response.jwt)
         router.push('/')
       } catch (error) {
+          toast.error(' ¡ Usuario y/o contraseña incorrecta ! ')
+        
           console.error(error)
       }
     }
@@ -47,11 +50,22 @@ export function LoginForm() {
       error={formik.errors.password}
     />
     <FormGroup>
-      <FormButton type='submit' size='small' color='grey' loading={formik.isSubmitting} primary>
+      <FormButton 
+        type='submit' 
+        size='small'  
+        loading={formik.isSubmitting} 
+        primary 
+      >
         Entrar
       </FormButton>
     </FormGroup>
+    <Toaster 
+      theme="dark"
+      position="bottom-center"
+      duration={8000}
+      visibleToasts={1}
+      richColors
+    />
   </Form>
-
   )
 }
